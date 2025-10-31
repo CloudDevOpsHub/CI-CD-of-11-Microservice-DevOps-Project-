@@ -3,6 +3,8 @@ eksctl create cluster --name=EKS-1 \
                       --zones=ap-south-1a,ap-south-1b \
                       --without-nodegroup
 
+It will take 5+ minutes for Cluster Creation's 
+
 eksctl utils associate-iam-oidc-provider \
     --region ap-south-1 \
     --cluster EKS-1 \
@@ -24,3 +26,5 @@ eksctl create nodegroup --cluster=EKS-1 \
                        --full-ecr-access \
                        --appmesh-access \
                        --alb-ingress-access
+
+It will take 5+ minutes for NodeGroup Creation's
